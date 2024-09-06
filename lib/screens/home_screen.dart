@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     : index == 1
                                         ? "Maps"
                                         : "Weapons",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 15.0,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
@@ -190,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     .infinity, // Fill the width of the container
                                                 errorBuilder: (context, error,
                                                         stackTrace) =>
-                                                    SizedBox(
+                                                    const SizedBox(
                                                   height: 150,
                                                   width: double.infinity,
                                                   child: Icon(Icons.error,
@@ -205,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text(
                                             map.displayName ?? '',
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                               fontSize: 25.0,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black,
@@ -264,7 +264,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     .infinity, // Fill the width of the container
                                                 errorBuilder: (context, error,
                                                         stackTrace) =>
-                                                    SizedBox(
+                                                    const SizedBox(
                                                   height: 150,
                                                   width: double.infinity,
                                                   child: Icon(Icons.error,
@@ -279,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text(
                                             weapon.displayName ?? '',
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                               fontSize: 25.0,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black,
@@ -336,13 +336,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       0.2, // Responsive height
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) =>
-                      Icon(Icons.error, color: Colors.white),
+                      const Icon(Icons.error, color: Colors.white),
                 )
-              : Icon(Icons.image, size: 100, color: Colors.white),
+              : const Icon(Icons.image, size: 100, color: Colors.white),
           const SizedBox(height: 8),
           Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
               color: Colors.white,

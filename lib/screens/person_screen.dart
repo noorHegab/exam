@@ -21,7 +21,7 @@ class PersonScreen extends StatelessWidget {
         title: Center(
           child: Text(
             agentModel.displayName ?? "",
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
             ),
           ),
@@ -63,12 +63,12 @@ class PersonScreen extends StatelessWidget {
             ),
             Text(
               agentModel.description ?? "",
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20.0,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
             Text(agentModel.displayName ?? ""),
@@ -77,7 +77,7 @@ class PersonScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: InkWell(
-                    child: Image(
+                    child: const Image(
                       image: AssetImage('assets/images/Group 6 (3).png'),
                     ),
                     onTap: () {},
