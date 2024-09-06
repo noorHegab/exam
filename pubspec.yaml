@@ -1,0 +1,34 @@
+name: first_design
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  hexcolor: ^3.0.1
+  http: ^1.2.2
+  carousel_slider: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.4.1
+  flutter_lints: ^3.0.0
+
+flutter_native_splash:
+  android: true
+  ios: false
+  image: assets/images/Logo Icon.png
+  color: "#000000"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
