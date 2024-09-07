@@ -40,8 +40,8 @@ class AgentsTab extends StatelessWidget {
                     );
                   },
                   child: buildPerson(
-                    colors: agent.backgroundGradientColors ??
-                        ['66376C', 'B1414C'], // استدعاء الألوان من الـ model
+                    colors:
+                        agent.backgroundGradientColors ?? ['66376C', 'B1414C'],
                     image: agent.fullPortrait ?? '',
                     text: agent.displayName ?? '',
                     context: context,
@@ -62,7 +62,7 @@ class AgentsTab extends StatelessWidget {
   }
 
   Widget buildPerson({
-    required List<String> colors, // استقبال قائمة الألوان
+    required List<String> colors,
     required String image,
     required String text,
     required BuildContext context,

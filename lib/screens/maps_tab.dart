@@ -48,19 +48,6 @@ class MapsTab extends StatelessWidget {
                             width: double.infinity,
                           ),
                         ),
-                        // Image.network(
-                        //   map.splash ?? '',
-                        //   fit: BoxFit.cover,
-                        //   height: 150,
-                        //   width: double.infinity,
-                        //   errorBuilder: (context, error, stackTrace) =>
-                        //       const SizedBox(
-                        //     height: 150,
-                        //     width: double.infinity,
-                        //     child: Icon(Icons.error,
-                        //         size: 40.0, color: Colors.white),
-                        //   ),
-                        // ),
                       ),
                     ),
                   ),
